@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    container_name: quantumstock-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://quantum:secret@db:5432/quantumstock
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_ALGORITHM=HS256
+      - JWT_EXPIRES_MIN=1440
+    volumes:
+      - ./saved_models:/app/saved_models
+      - ./datasets:/app/datasets
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16-alpine
+    container_name: quantumstock-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=quantum
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=quantumstock
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  frontend:
+    image: nginx:alpine
+    container_name: quantumstock-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ../frontend/dist:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:

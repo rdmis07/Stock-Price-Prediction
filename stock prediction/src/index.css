@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #07090f;
+  --color-bg-panel: #0d1220;
+  --color-bg-card: #131a2c;
+  --color-bg-elev: #1a2138;
+  --color-border-soft: #1f2942;
+  --color-accent: #5eead4;
+  --color-accent-2: #818cf8;
+  --color-bull: #22c55e;
+  --color-bear: #ef4444;
+  --color-warn: #f59e0b;
+}
+
+html, body, #root {
+  height: 100%;
+  background: #07090f;
+  color: #e2e8f0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+}
+
+* { -webkit-font-smoothing: antialiased; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #0d1220; }
+::-webkit-scrollbar-thumb { background: #1f2942; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #2a3556; }
+
+/* Glow utilities */
+.glow-accent { box-shadow: 0 0 30px -8px rgba(94, 234, 212, 0.45); }
+.glow-bull   { box-shadow: 0 0 24px -8px rgba(34, 197, 94, 0.55); }
+.glow-bear   { box-shadow: 0 0 24px -8px rgba(239, 68, 68, 0.55); }
+
+.grid-bg {
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(94, 234, 212, 0.08), transparent 40%),
+    radial-gradient(circle at 80% 10%, rgba(129, 140, 248, 0.08), transparent 45%),
+    linear-gradient(to bottom, #07090f, #07090f);
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(19,26,44,0.85), rgba(13,18,32,0.85));
+  border: 1px solid #1f2942;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: 999px; font-size: 11px;
+  font-weight: 600; letter-spacing: 0.02em;
+  border: 1px solid #1f2942; background: #0d1220;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(94, 234, 212, 0.18), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2.4s linear infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.pulse-dot {
+  width: 8px; height: 8px; border-radius: 999px; background: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34,197,94, 0.7);
+  animation: pulseDot 1.8s infinite;
+}
+@keyframes pulseDot {
+  0%   { box-shadow: 0 0 0 0 rgba(34,197,94, 0.7); }
+  70%  { box-shadow: 0 0 0 10px rgba(34,197,94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34,197,94, 0); }
+}
+
+.tab-active {
+  background: linear-gradient(180deg, #1a2138, #131a2c);
+  color: #5eead4;
+  border-color: #2a3556 !important;
+}
+
+.fade-in { animation: fadeIn 0.4s ease-out both; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
