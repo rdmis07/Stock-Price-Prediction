@@ -178,25 +178,28 @@ Full interactive docs at `/docs` (Swagger UI) and `/redoc`.
 | Linear Regression | OLS | 3.12 | 3.95 | 0.62 |
 | Decision Tree | CART | 3.45 | 4.21 | 0.58 |
 
-> Metrics from 5-fold cross-validation on AAPL daily closes, 2019-2024.
-
 ---
 
 ## 🖼️ Screenshots
 ### 🔹 System Dashboard Interface
-![Dashboard](../ss1.png)
+<img width="1354" height="560" alt="ss1" src="https://github.com/user-attachments/assets/66c3abf7-ba39-427f-a9b2-756ae30203a2" />
+
 
 ### 🔹 AI Predictions Analytics
-![Predictions](../ss2.png)
+<img width="1919" height="967" alt="ss2" src="https://github.com/user-attachments/assets/98eae44a-6467-45e9-a4cd-66f25076e9ba" />
+
 
 ### 🔹 Technical Indicators Chart
-![Indicators](../ss3.png)
+<img width="1919" height="969" alt="ss3" src="https://github.com/user-attachments/assets/93c2016b-6bd1-4643-9dc1-000eaeffede8" />
+
 
 ### 🔹 QuantumGPT Financial Assistant
-![Assistant](../ss4.png)
+<img width="1919" height="917" alt="ss4" src="https://github.com/user-attachments/assets/6e4298e2-7a4a-4ace-adef-72a8e23e4008" />
+
 
 ### 🔹 Model Performance Evaluation
-![Performance](../ss5.png)
+<img width="1919" height="971" alt="ss5" src="https://github.com/user-attachments/assets/9a0946ff-9531-463d-b2ae-a37492b3e1fb" />
+
 
 ---
 
