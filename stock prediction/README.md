@@ -183,9 +183,7 @@ Full interactive docs at `/docs` (Swagger UI) and `/redoc`.
 ---
 
 ## 🖼️ Screenshots
-
-> Add your screenshots here:
-> - `docs/screenshots/dashboard.png`
+> - `docs/screenshots/ss1.png`
 > - `docs/screenshots/predictions.png`
 > - `docs/screenshots/portfolio.png`
 
