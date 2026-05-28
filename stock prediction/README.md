@@ -107,13 +107,13 @@ cp .env.example .env
 python -m backend.database.db --init
 ```
 
-### 4. Train the models (one-time, ~5 min)
+### 4. Training the models (one-time, ~5 min)
 
 ```bash
 python -m backend.ml.train --symbols AAPL MSFT NVDA TSLA --years 5
 ```
 
-### 5. Run the API server
+### 5. Running the API server
 
 ```bash
 uvicorn backend.app:app --reload --port 8000
@@ -121,7 +121,7 @@ uvicorn backend.app:app --reload --port 8000
 
 API docs: **http://localhost:8000/docs**
 
-### 6. Run the frontend
+### 6. Running the frontend
 
 ```bash
 cd frontend
@@ -183,13 +183,24 @@ Full interactive docs at `/docs` (Swagger UI) and `/redoc`.
 ---
 
 ## 🖼️ Screenshots
-> - `docs/screenshots/ss1.png`
-> - `docs/screenshots/predictions.png`
-> - `docs/screenshots/portfolio.png`
+# System Dashboard Interface
+![Dashboard](ss1.png)
+
+# AI Predictions Analytics
+![Predictions](ss2.png)
+
+# Technical Indicators Chart
+![Indicators](ss3.png)
+
+# QuantumGPT Financial Assistant
+![Assistant](ss4.png)
+
+# Model Performance Evaluation
+![Performance](ss5.png)
 
 ---
 
-## 🧪 Running Tests
+# Running Tests
 
 ```bash
 pytest tests/ -v --cov=backend
