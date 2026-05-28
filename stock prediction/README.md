@@ -183,20 +183,20 @@ Full interactive docs at `/docs` (Swagger UI) and `/redoc`.
 ---
 
 ## 🖼️ Screenshots
-# System Dashboard Interface
-![Dashboard](ss1.png)
+### 🔹 System Dashboard Interface
+![Dashboard](../ss1.png)
 
-# AI Predictions Analytics
-![Predictions](ss2.png)
+### 🔹 AI Predictions Analytics
+![Predictions](../ss2.png)
 
-# Technical Indicators Chart
-![Indicators](ss3.png)
+### 🔹 Technical Indicators Chart
+![Indicators](../ss3.png)
 
-# QuantumGPT Financial Assistant
-![Assistant](ss4.png)
+### 🔹 QuantumGPT Financial Assistant
+![Assistant](../ss4.png)
 
-# Model Performance Evaluation
-![Performance](ss5.png)
+### 🔹 Model Performance Evaluation
+![Performance](../ss5.png)
 
 ---
 
