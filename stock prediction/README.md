@@ -220,3 +220,7 @@ pytest tests/ -v --cov=backend
 **Frontend** React 19 · Vite · TypeScript · Tailwind CSS · Recharts
 **Database** SQLite / PostgreSQL
 **DevOps** Docker · docker-compose · GitHub Actions
+
+
+
+Creator - Rudransh Mishra
