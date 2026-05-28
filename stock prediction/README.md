@@ -206,11 +206,3 @@ pytest tests/ -v --cov=backend
 **Frontend** React 19 · Vite · TypeScript · Tailwind CSS · Recharts
 **Database** SQLite / PostgreSQL
 **DevOps** Docker · docker-compose · GitHub Actions
-
----
-
-## 📄 License
-
-MIT © 2026 QuantumStock
-
-> ⚠️ **Disclaimer**: This system is for educational and research purposes only. It is **not** financial advice. Past performance does not guarantee future results.
