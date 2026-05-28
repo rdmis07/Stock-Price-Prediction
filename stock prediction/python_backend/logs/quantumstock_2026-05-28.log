@@ -1,0 +1,8 @@
+2026-05-28 12:56:31.351 | INFO     | backend.app:lifespan:37 - 🚀 Starting QuantumStock v1.0 in development mode
+2026-05-28 12:56:31.354 | INFO     | backend.database.db:init_db:20 - Initializing database: sqlite:///./quantumstock.db
+2026-05-28 12:56:31.506 | INFO     | backend.ml.predict:warm_up_models:49 - 📦 Warmed up 0 model artifacts
+2026-05-28 12:59:07.199 | INFO     | backend.app:lifespan:41 - 👋 Shutting down gracefully
+2026-05-28 12:59:57.512 | INFO     | backend.app:lifespan:37 - 🚀 Starting QuantumStock v1.0 in development mode
+2026-05-28 12:59:57.516 | INFO     | backend.database.db:init_db:20 - Initializing database: sqlite:///./quantumstock.db
+2026-05-28 12:59:57.524 | INFO     | backend.ml.predict:warm_up_models:49 - 📦 Warmed up 0 model artifacts
+2026-05-28 13:15:53.502 | INFO     | backend.app:lifespan:41 - 👋 Shutting down gracefully
